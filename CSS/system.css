@@ -1,0 +1,449 @@
+@font-face {
+    font-family: valo;
+    src: url('../IMG/Valorant\ Font.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about, .agent {
+    background-color: #ece8e1;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.navbar .nav-content-wrapper {
+    display: flex;
+}
+
+.navbar .nav-content-wrapper .navlink {
+    display: flex;
+    align-items:center;
+
+    position:relative;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navlink > a {
+    text-decoration: none;
+    color: white;
+    padding: 33px 70px;
+
+}
+
+.navbar .nav-content-wrapper .navlink:hover {
+    background-color:#ff4556;
+    transition: .8s;
+}
+
+.navlink .sub{
+    display: none;
+    position: absolute;
+    left: 0;
+    margin-top: 359px;
+}
+
+.navbar .nav-content-wrapper .navlink:hover .sub{
+    display: block;
+}
+
+.navlink .sub .sub-navlink {
+    background: black;
+
+    display: flex;
+    align-items:center;
+}
+.navlink .sub .sub-navlink a {
+    text-decoration: none;
+    color: white;
+
+    padding: 10px 125px 10px 10px;
+}
+
+.navlink .sub .sub-navlink:hover {
+    background: #ff4556;
+    transition: .8s;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-image: url('../IMG/Laforant\ white.png');
+    background-size: cover;
+    margin-left: 50px;
+}
+
+.navbar .preregist-butt {
+    width: 210px;
+    height: 65px;
+    margin-right: 50px;
+    border-radius: 5px;
+    background-color: #ff4556;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .preregist-butt a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar .burger-butt {
+    width:40px;
+    height:40px;
+    margin-right: 50px;
+    background: url('../IMG/burger.png');
+    background-size: cover;
+    display: none;
+}
+
+/* ============================================== */
+
+.sub-header {
+    padding-top: 50px;
+    font-family: valo;
+    display: flex;
+}
+
+.sub-header p {
+    font-size: 64px;
+}
+
+.red-line {
+    background-color: #ff4556;
+    height: 5px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.red-font {
+    color: #ff4655!important;
+    margin-right: 10px
+}
+
+.spec-wrapper {
+    height: 850px;
+    padding: 100px 10%;
+    padding-bottom: 0;
+
+    position: relative;
+}
+
+.spec-wrapper .upper-content-wrapper {
+    display: flex;
+
+    padding-top: 150px;
+}
+
+.spec-wrapper .upper-content-wrapper .pc-img {
+    background: url('../IMG/Computer.png');
+    width: 180px;
+    height: 140px;
+    background-size: cover;
+
+    margin-right: 50px;
+}
+
+.spec-wrapper .upper-content-wrapper .min-desc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.spec-wrapper .upper-content-wrapper .min-desc h2 {
+    margin: 10px 0 50px 0;
+
+}
+
+.spec-wrapper .upper-content-wrapper .min-desc .min-spec {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    font-size: 24px;
+}
+
+.lower-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 100px;
+}
+
+.lower-content-wrapper .spec-desc p {
+    font-size: 28px;
+}
+
+.spec-wrapper .upper-content-wrapper .min-desc .min-spec .red-font {
+    margin: 0;
+    font-weight: bold;
+}
+
+.spec-wrapper .lower-content-wrapper .spec-type,
+.spec-wrapper .lower-content-wrapper .cpu,
+.spec-wrapper .lower-content-wrapper .gpu {
+    display: flex;
+}
+
+.spec-wrapper .lower-content-wrapper .spec-type p,
+.spec-wrapper .lower-content-wrapper .cpu p,
+.spec-wrapper .lower-content-wrapper .gpu p {
+    font-weight: bold;
+}
+
+.spec-wrapper .lower-content-wrapper .cpu,
+.spec-wrapper .lower-content-wrapper .gpu {
+    padding-top: 30px;
+}
+
+.red-vertical-line {
+    background-color: #ff4556;
+    height: 250px;
+    width: 2.5px;
+}
+
+.lower-content-wrapper .red-line {
+    display: none;
+}
+
+/* ============================================== */
+
+.footer-wrapper {
+    margin-top: 150px;
+    position: relative;
+    height: 500px;
+    padding: 50px 30%;
+    background: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-wrapper .footer-title {
+    display: flex;
+    align-items: center;
+    height: 200px; 
+}
+
+.footer-wrapper .footer-title .footer-logo {
+    background: url('../IMG/Laforant\ white.png');
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin-left: -30px;
+}
+
+.footer-wrapper .footer-title h1 {
+    font-family: valo;
+    font-weight: lighter;
+    font-size: 100px;
+    color: white;
+}
+
+.social-media-wrapper {
+    width: 100%;
+    height: 200px;
+}
+
+.social-media-wrapper h3 {
+    font-weight: bold;
+    font-size: 24px;
+    color: grey;
+}
+.social-media-wrapper p {
+    font-size: 12px;
+    color: grey;
+}
+
+.media {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.media a {
+    text-decoration:none;
+}
+
+.teen-rating {
+    position: absolute;
+    background: url('../IMG/Teen\ Rating.png');
+    background-size: cover;
+    width: 80px;
+    height: 108px;
+
+    bottom: 10px;
+    left: 10px;
+}
+
+/* =========================================== */
+.pop-up-wrapper {
+    width: 50%;
+    height: 650px;
+    background:black;
+    margin-top: 745px;
+
+    position: absolute;
+    right:0;
+    display: none;
+}
+
+.side-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+
+.pop-up-wrapper .side-content-wrapper .sidelink {
+    display: flex;
+
+    position: relative;
+}
+
+.pop-up-wrapper .side-content-wrapper .sidelink:hover {
+    background-color:#ff4556;
+
+    transition: .8s;
+}
+.pop-up-wrapper .side-content-wrapper .sidelink > a{
+    color: white;
+    text-decoration: none;
+    padding : 30px 280px 30px 20px;
+}
+
+.sub-side {
+    position: absolute;
+
+    left: 60px;
+    top: 80px;;
+    display: none;
+}
+
+.sub-sidelink {
+    display: flex;
+    align-items: center;
+}
+
+.sub-sidelink a {
+    color: white;
+    text-decoration: none;
+
+    padding: 20px 300px 20px 0;
+}
+
+.sub-sidelink:hover {
+    background-color:#ff4556;
+}
+
+.sidelink:hover .sub-side {
+    display:block;
+}
+
+/* =========================================== */
+
+@media screen and (max-width:1100px) {
+    .navlink > a {
+        padding: 33px 40px;
+        font-size: 20px;
+    }
+
+    .preregist-butt {
+        width: 150px!important;
+        font-size:20px!important;
+    }
+
+    .footer-wrapper .footer-title h1 {
+        font-size: 60px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .logo {
+        margin: 0;
+    }
+
+    .navbar .burger-butt {
+        display: block;
+    }
+
+    .nav-content-wrapper {
+        display: none!important;
+    }
+
+    .preregist-butt {
+        display: none!important;
+    }
+
+    .spec-wrapper {
+        height:1200px;
+    }
+
+    .spec-wrapper .upper-content-wrapper .pc-img {
+        height: 105px;
+        width: 135px;
+        background-size: cover;
+    }
+
+    .lower-content-wrapper {
+        flex-direction: column!important;
+        align-items:flex-start;
+    }
+
+    .lower-content-wrapper .red-vertical-line{
+        display : none;
+    }
+    .lower-content-wrapper .red-line{
+        display : block;
+        height:2px;
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .red-square {
+        display: none;
+    }
+
+    .sub-header p{
+        font-size: 50px;
+    }
+
+    .spec-wrapper .upper-content-wrapper .pc-img {
+        height: 84px;
+        width: 108px;
+        background-size: cover;
+    }
+
+    .lower-content-wrapper .spec-desc p,
+    .min-desc h2,
+    .min-spec p  { 
+        font-size: 16px;
+    }
+}
