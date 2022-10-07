@@ -1,2 +1,2 @@
-# FinalProjectHCI
-Final Project HCI
+# Laforant Website
+Website for a tactical shooter game
